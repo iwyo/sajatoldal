@@ -197,6 +197,25 @@ article {
   z-index: 1;
 }
 
+.cv-download {
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  width: auto;
+  align-content: center;
+}
+
+.cv-download:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--orange-yellow-crayola);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+
 .icon-box::before {
   content: "";
   position: absolute;
@@ -1310,7 +1329,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 12px;
     font-size: 18px;
   }
-
 
 
   /**
