@@ -21,7 +21,6 @@ Location
 Sacramento, California, USA
 
 # navbar
-
 About
 Resume
 Portfolio
