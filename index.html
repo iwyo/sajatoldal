@@ -777,13 +777,14 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="asztali alkalmazás">
-              <a href="#">
+              <a>
 
                 <figure class="project-img">
+                  <!--
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
+                  -->
                   <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
                 </figure>
 
@@ -795,13 +796,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="interior design">
-              <a href="#">
+              <a>
 
                 <figure class="project-img">
+                  <!--
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
+                    -->
                   <img src="./assets/images/project-2.jpg" alt="orizon" loading="lazy">
                 </figure>
 
@@ -813,13 +815,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="asztali alkalmazás">
-              <a href="#">
+              <a>
 
                 <figure class="project-img">
+                  <!--
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
+                    -->
                   <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
                 </figure>
 
@@ -831,13 +834,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="design">
-              <a href="#">
+              <a>
 
                 <figure class="project-img">
+                  <!--
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
+                  -->
                   <img src="./assets/images/project-4.jpg" alt="brawlhalla" loading="lazy">
                 </figure>
 
@@ -849,13 +853,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="Asztali alkalmazás">
-              <a href="#">
+              <a>
 
                 <figure class="project-img">
+                  <!--
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
+                  -->
                   <img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy">
                 </figure>
 
@@ -867,13 +872,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="asztali alkalmazás">
-              <a href="#">
+              <a>
 
                 <figure class="project-img">
+                  <!--
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
+                  -->
                   <img src="./assets/images/project-6.jpg" alt="metaspark" loading="lazy">
                 </figure>
 
@@ -885,13 +891,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="design">
-              <a href="#">
+              <a>
 
                 <figure class="project-img">
+                  <!--
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
+                  -->
                   <img src="./assets/images/project-7.jpg" alt="summary" loading="lazy">
                 </figure>
 
@@ -903,13 +910,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="asztali alkalmazás">
-              <a href="#">
+              <a>
 
                 <figure class="project-img">
+                  <!--
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
+                  -->
                   <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
                 </figure>
 
@@ -921,13 +929,14 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="interior design">
-              <a href="#">
+              <a>
 
                 <figure class="project-img">
+                  <!--
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
+                  -->
                   <img src="./assets/images/project-9.jpg" alt="arrival" loading="lazy">
                 </figure>
 
@@ -1152,37 +1161,41 @@
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.9504198915033!2d19.04461727743103!3d47.549293691931425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d964eb2a468d%3A0x66f0bc700d58b41d!2zQnVkYXBlc3QsIEJvZ2TDoW5pIMO6dCAyLCAxMDMz!5e0!3m2!1shu!2shu!4v1716502762225!5m2!1shu!2shu"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4528.962656562759!2d19.041021085090744!3d47.549548892385545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d96f8a1c3f01%3A0x3de574722c941e22!2zQnVkYXBlc3QsIEJvZ2TDoW5pIMO6dA!5e0!3m2!1shu!2shu!4v1716564300069!5m2!1shu!2shu"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Kapcsolatfelvételi űrlap</h3>
 
-          <form action="#" class="form" data-form>
+          <form  onsubmit="sendEmail(); reset(); return false;" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input id="name" type="text" name="fullname" class="form-input" placeholder="Teljes Név" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input id="email" type="email" name="email" class="form-input" placeholder="Email Cím" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <textarea id="message" name="message" class="form-input" placeholder="Az üzeneted" required data-form-input></textarea>
+           
+            <div style="display:flex; align-items:flex-start; align-items: center;">            
+            <p id="para" class="h5" style="visibility: hidden;">Sikeres üzenetküldés!</p>
+            <button o class="form-btn" type="submit" disabled data-form-btn>            
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+              <span>Üzenetküldés</span>
+            </button>         
+            </div>
 
           </form>
-
+          
         </section>
-
+        
       </article>
 
     </div>
+
 
   </main>
 
@@ -1195,6 +1208,8 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="https://fydo.co.uk/contact-widget-loader-remote.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <!--
     - ionicon link

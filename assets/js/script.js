@@ -157,3 +157,24 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+function sendEmail(){
+  Email.send({
+    SecureToken : "df5d18a3-1d1e-4bae-9866-a80e869511c9",
+    To : 'bbalogbence98@gmail.com',
+    From : 'info@balogbence.hu',
+    Subject : "Új kapcsolatfelvétel az oldalról!",
+    Body: "Név: "+document.getElementById("name").value
+      + "<br> Email: " + document.getElementById("email").value
+      + "<br> Üzenet: " + document.getElementById("message").value
+
+  }).then(
+      document.getElementById("para").style.visibility = "visible",
+      setTimeout(delayResponse,4000)
+  );
+}
+
+function delayResponse(){
+  document.getElementById("para").style.visibility = "hidden"
+}
