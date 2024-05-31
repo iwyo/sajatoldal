@@ -188,7 +188,6 @@ function sendEmail(){
 
   }).then(
       ShowNotification()
-      //notification_button()
       
   );
 }
