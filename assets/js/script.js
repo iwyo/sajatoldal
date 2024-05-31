@@ -162,6 +162,20 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
+
+function ShowNotification(){
+      Swal.fire({
+          background: "hsl(240, 2%, 13%)",         
+          title: 'Sikeres üzenetküldés!',
+          color: "#bcffb8",
+          width: 400,
+          showConfirmButton: false,
+          icon: 'success',
+          timer: 3000,
+          timerProgressBar: true      
+  })
+};
+
 function sendEmail(){
   Email.send({
     SecureToken : "df5d18a3-1d1e-4bae-9866-a80e869511c9",
@@ -173,12 +187,8 @@ function sendEmail(){
       + "<br> Üzenet: " + document.getElementById("message").value
 
   }).then(
-      document.getElementById("para").style.visibility = "visible",
-      setTimeout(delayResponse,4000)
+      ShowNotification()
+      //notification_button()
       
   );
-}
-
-function delayResponse(){
-  document.getElementById("para").style.visibility = "hidden"
 }
