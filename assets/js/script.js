@@ -175,6 +175,7 @@ function sendEmail(){
   }).then(
       document.getElementById("para").style.visibility = "visible",
       setTimeout(delayResponse,4000)
+      
   );
 }
 
